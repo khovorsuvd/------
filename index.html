@@ -17,7 +17,22 @@
 </head>
 
 <body>
-    <div class="container d-flex  align-items-end ">
+    <style>
+        <?php
+        /*for ($i =1; $i < 55; $i++): ?>.option:nth-child(<?php echo $i;
+
+            $ang =$i - 1; ?>) {
+            transform: rotate(<?php echo $ang * 9 - 4.5; ?>deg);
+        }
+
+        <?php endfor;
+        ?><?php $time =time();
+        $wera =floor($time / 60);
+        $firts_time_left =($wera + 1) * 60 - $time;
+       */
+        ?>
+    </style>
+    <div class="container d-flex  align-items-center ">
         <aside class="">
             <ul class="list-unstyled  d-flex flex-column justify-content-around  ">
                 <li>
@@ -43,28 +58,37 @@
             </ul>
         </aside>
         <main class="d-flex flex-column ">
-            <div class="header d-flex align-items-center">
+
+            <div class="header mb-4 d-flex align-items-center">
                 <a href="https://south1.net/" class="d-flex text-decoration-none me-4">
                     <img src="./img/logo.png" class="logo" alt="logo">
-                    <div class="logo-slogan d-none d-md-flex ">крипто <br>платформа<br> розыгрышей</div>
+
                 </a>
                 <nav class="d-flex">
                     <ul class="list-unstyled d-flex  ">
                         <li class="">
-                            <a class="text-decoration-none d-flex" href="https://south1.net/spinner"> <img
-                                    src="./img/spiner p.png" class="nav-img icon-link" alt="spin">Спиннер</a>
+                            <a class="text-decoration-none d-flex gap-1" href="https://south1.net/spinner"> 
+                                <svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 16.3168L3 13.4642C3.37228 13.6792 3.78288 13.8362 4.21973 13.9231C4.61143 14.001 5.02655 14.0005 5.37106 14L5.417 14C9.80567 13.9965 14.1944 13.9965 18.5831 14L18.629 14C18.9735 14.0005 19.3886 14.001 19.7803 13.9231C20.2171 13.8362 20.6277 13.6792 21 13.4642L21 16.3168C21 17.1582 21.0001 17.8832 20.9179 18.4637C20.8297 19.0859 20.631 19.6823 20.1213 20.166C19.6117 20.6497 18.9833 20.8384 18.3278 20.922C17.7161 21.0001 16.9523 21 16.0658 21H7.93417C7.04768 21 6.28387 21.0001 5.67221 20.922C5.0167 20.8384 4.38835 20.6497 3.87868 20.166C3.36902 19.6823 3.17028 19.0859 3.08215 18.4637C2.99991 17.8832 2.99995 17.1582 3 16.3168ZM13 17C13 16.4477 12.5523 16 12 16C11.4477 16 11 16.4477 11 17V18C11 18.5523 11.4477 19 12 19C12.5523 19 13 18.5523 13 18V17Z" fill="#9fb1d5"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M5.71099 2.87475C4.81028 3.77546 4.64197 4.98504 5.0038 6.00293C4.7912 6.008 4.59628 6.02163 4.41479 6.05773C3.22473 6.29444 2.29445 7.22471 2.05773 8.41476C1.99948 8.70761 1.99974 9.03544 2.00004 9.41613L2.00009 9.5L2.00004 9.58387C1.99974 9.96456 1.99948 10.2924 2.05773 10.5852C2.29445 11.7753 3.22473 12.7056 4.41479 12.9423C4.70765 13.0005 5.03548 13.0003 5.41617 13C9.80538 12.9965 14.1946 12.9965 18.5838 13C18.9645 13.0003 19.2924 13.0005 19.5852 12.9423C20.7753 12.7056 21.7056 11.7753 21.9423 10.5852C22.0005 10.2924 22.0003 9.9646 22 9.58393L21.9999 9.5L22 9.4161C22.0003 9.03544 22.0005 8.70759 21.9423 8.41476C21.7056 7.22471 20.7753 6.29445 19.5852 6.05773C19.4037 6.02163 19.2088 6.008 18.9961 6.00293C19.3579 4.98504 19.1896 3.77546 18.2889 2.87475C17.0258 1.61166 14.9413 1.72259 13.8232 3.12018L12 5.39921L10.1767 3.12018C9.05866 1.72259 6.97408 1.61166 5.71099 2.87475ZM12 7C11.4477 7 11 7.44772 11 8V10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10V8C13 7.44772 12.5523 7 12 7ZM7.82839 6C6.9434 6 6.49105 4.92312 7.1252 4.28897C7.54788 3.86629 8.24376 3.90552 8.61499 4.36957L9.91933 6H7.82839ZM16.1715 6C17.0565 6 17.5089 4.92312 16.8747 4.28897C16.452 3.86629 15.7562 3.90552 15.3849 4.36957L14.0806 6H16.1715Z" fill="#9fb1d5"></path> </g></svg>
+                                Бонусы
+                                </a>
                         </li>
                         <li class="">
-                            <a class="text-decoration-none d-flex" href="https://south1.net/freebie"> <img
-                                    src="./img/freebe p.png" class="nav-img" alt="spin">Халява</a>
+                            <a class="text-decoration-none d-flex gap-1" href="https://south1.net/spinner"> 
+                                <svg    width="14px" height="14px" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 54.96 54.96" style="enable-background:new 0 0 54.96 54.96;" xml:space="preserve"><g><g><path style="fill: #9fb1d5;" d="M44.571,31.908c-0.038-0.237-0.243-0.418-0.49-0.418H40.04c-0.247,0-0.453,0.181-0.491,0.418 l0.298,1.613h4.425L44.571,31.908z" fill="#9fb1d5"></path><path style="fill:#9fb1d5;" d="M40.329,38.93h3.463c0.115,0,0.208-0.094,0.208-0.208v-2.731h-3.88v2.731 C40.12,38.836,40.214,38.93,40.329,38.93z" fill="#010002"></path><path style="fill: #9fb1d5;" d="M5.553,33.532c0.076,0.001,0.147-0.002,0.223-0.005c0.122-0.004,0.244-0.009,0.365-0.005h1.274 L7.14,31.987c0-1.636,1.331-2.966,2.966-2.966h4.041c1.636,0,2.966,1.33,2.966,2.966l-0.021,0.225l-0.243,1.31h20.5l-0.274-1.534 c0-1.636,1.33-2.966,2.966-2.966h4.041c1.635,0,2.966,1.33,2.966,2.966l-0.021,0.225l-0.243,1.31h2.368 c0.066-0.001,0.154-0.008,0.242-0.015c0.129-0.009,0.257-0.018,0.386-0.021c2.219-0.048,3.952-0.602,5.18-1.636v-15.92 c0-2.87-2.35-4.346-5.197-5.197c0,0-4.948-0.692-10.775-1.241l-0.266-3.124c-0.042-2.462-2.059-4.453-4.531-4.453H20.77 c-2.472,0-4.488,1.99-4.531,4.453l-0.272,3.124c-5.825,0.55-10.77,1.241-10.77,1.241C2.292,11.621,0,13.061,0,15.931v15.62 C1.238,32.806,3.097,33.478,5.553,33.532z M19.524,6.589l0.006-0.143c0-0.684,0.556-1.24,1.24-1.24h13.419 c0.684,0,1.24,0.556,1.24,1.24l0.235,2.757c-2.844-0.221-5.716-0.376-8.185-0.376c-2.468,0-5.339,0.155-8.183,0.376L19.524,6.589z " fill="#010002"></path><path style="fill: #9fb1d5;" d="M49.832,35.954c-0.088,0.002-0.174,0.009-0.26,0.015c-0.132,0.01-0.265,0.019-0.398,0.021h-2.705 v2.731c0,1.476-1.201,2.677-2.677,2.677h-3.463c-1.477,0-2.678-1.201-2.678-2.677V35.99H16.534v2.731 c0,1.476-1.201,2.677-2.677,2.677h-3.463c-1.476,0-2.677-1.201-2.677-2.677V35.99H6.115c-0.1-0.002-0.176,0.001-0.252,0.004 C5.769,35.997,5.674,36,5.581,36c-0.027,0-0.054,0-0.081,0c-2.173-0.048-4.009-0.508-5.5-1.36v11.433 c0,2.871,2.262,4.288,5.197,5.197c0,0,14.314,1.858,22.282,1.771c8.922-0.047,22.282-1.771,22.282-1.771 c3.032-0.982,5.197-2.327,5.197-5.197V34.79C53.537,35.515,51.828,35.91,49.832,35.954z" fill="#010002"></path><path style="fill: rgb(255, 255, 255);" d="M10.394,38.93h3.463c0.115,0,0.208-0.094,0.208-0.208v-2.731h-3.88v2.731 C10.185,38.836,10.279,38.93,10.394,38.93z" fill="#010002"></path><path style="fill: #9fb1d5;" d="M14.637,31.908c-0.038-0.237-0.244-0.418-0.491-0.418h-4.041c-0.247,0-0.453,0.181-0.49,0.418 l0.299,1.614h4.424L14.637,31.908z" fill="#010002"></path></g></g></svg>
+                                Партнерство
+                                </a>
                         </li>
                         <li class="">
-                            <a class="text-decoration-none d-flex" href="https://south1.net/space"><img
-                                    src="./img/speis p.png" class="nav-img" alt="spin">Космос</a>
+                            <a class="text-decoration-none d-flex gap-1" href="https://south1.net/spinner"> 
+                              <svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21.9999 8.16234L21.9999 8.23487C21.9999 9.09561 21.9999 9.52598 21.7927 9.8781C21.5855 10.2302 21.2093 10.4392 20.4569 10.8572L19.6636 11.298C20.2102 9.44984 20.3926 7.46414 20.4601 5.76597C20.4629 5.69316 20.4662 5.61945 20.4695 5.54497L20.4718 5.49279C21.1231 5.71896 21.4887 5.88758 21.7168 6.20408C22 6.59692 22 7.11873 21.9999 8.16234Z" fill="#a4acc6"></path> <path d="M2 8.16234L2 8.23487C2.00003 9.09561 2.00004 9.52598 2.20723 9.8781C2.41442 10.2302 2.79063 10.4392 3.54305 10.8572L4.33681 11.2982C3.79007 9.45001 3.60767 7.46422 3.54025 5.76597C3.53736 5.69316 3.5341 5.61945 3.53081 5.54497L3.5285 5.49266C2.87701 5.7189 2.51126 5.88752 2.2831 6.20408C1.99996 6.59692 1.99997 7.11873 2 8.16234Z" fill="#a4acc6"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 2C13.7837 2 15.2531 2.15709 16.3771 2.34674C17.5159 2.53887 18.0852 2.63494 18.5609 3.22083C19.0367 3.80673 19.0115 4.43998 18.9612 5.70647C18.7886 10.0545 17.8503 15.4853 12.75 15.9657V19.5H14.1802C14.6569 19.5 15.0673 19.8365 15.1608 20.3039L15.35 21.25H18C18.4142 21.25 18.75 21.5858 18.75 22C18.75 22.4142 18.4142 22.75 18 22.75H6C5.58579 22.75 5.25 22.4142 5.25 22C5.25 21.5858 5.58579 21.25 6 21.25H8.65L8.83922 20.3039C8.93271 19.8365 9.34312 19.5 9.8198 19.5H11.25V15.9657C6.14996 15.4851 5.21169 10.0544 5.03907 5.70647C4.98879 4.43998 4.96365 3.80673 5.43937 3.22083C5.91508 2.63494 6.48445 2.53887 7.62318 2.34674C8.74724 2.15709 10.2166 2 12.0002 2ZM12.9524 6.19887L12.8541 6.02251C12.4741 5.34084 12.2841 5 12 5C11.7159 5 11.5259 5.34084 11.1459 6.02251L11.0476 6.19887C10.9397 6.39258 10.8857 6.48944 10.8015 6.55334C10.7173 6.61725 10.6125 6.64097 10.4028 6.68841L10.2119 6.73161C9.47396 6.89857 9.10501 6.98205 9.01723 7.26432C8.92945 7.54659 9.18097 7.84072 9.68403 8.42898L9.81418 8.58117C9.95713 8.74833 10.0286 8.83191 10.0608 8.93532C10.0929 9.03872 10.0821 9.15023 10.0605 9.37327L10.0408 9.57632C9.96476 10.3612 9.92674 10.7536 10.1565 10.9281C10.3864 11.1025 10.7318 10.9435 11.4227 10.6254L11.6014 10.5431C11.7978 10.4527 11.8959 10.4075 12 10.4075C12.1041 10.4075 12.2022 10.4527 12.3986 10.5431L12.5773 10.6254C13.2682 10.9435 13.6136 11.1025 13.8435 10.9281C14.0733 10.7536 14.0352 10.3612 13.9592 9.57632L13.9395 9.37327C13.9179 9.15023 13.9071 9.03872 13.9392 8.93532C13.9714 8.83191 14.0429 8.74833 14.1858 8.58117L14.316 8.42898C14.819 7.84072 15.0706 7.54659 14.9828 7.26432C14.895 6.98205 14.526 6.89857 13.7881 6.73161L13.5972 6.68841C13.3875 6.64097 13.2827 6.61725 13.1985 6.55334C13.1143 6.48944 13.0603 6.39258 12.9524 6.19887Z" fill="#a4acc6"></path> </g></svg>
+                                Топ
+                                </a>
                         </li>
                         <li class="">
-                            <a class="text-decoration-none d-flex" href="https://south1.net/trade"> <img
-                                    src="./img/birja p.png" class="nav-img" alt="spin">Торговля</a>
+                            <a class="text-decoration-none d-flex gap-1" href="https://south1.net/spinner"> 
+                                <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 11.3C3 6.32949 7.02944 2.30005 12 2.30005C16.9706 2.30005 21 6.32949 21 11.3M3 11.3H5C6.10457 11.3 7 12.1955 7 13.3V15.3C7 16.4046 6.10457 17.3 5 17.3M3 11.3V16.3C3 16.8523 3.44772 17.3 4 17.3H5M21 11.3H19C17.8954 11.3 17 12.1955 17 13.3V15.3C17 16.4046 17.8954 17.3 19 17.3H20C20.5523 17.3 21 16.8523 21 16.3V11.3ZM5 17.3V18.3C5 19.4046 5.89543 20.3 7 20.3H9M9 20.3C9 21.1285 9.67157 21.8 10.5 21.8H11.5C12.3284 21.8 13 21.1285 13 20.3C13 19.4716 12.3284 18.8 11.5 18.8H10.5C9.67157 18.8 9 19.4716 9 20.3Z" stroke="#9fb1d5" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+                                Поддержка
+                                </a>
                         </li>
 
                     </ul>
@@ -72,8 +96,25 @@
 
 
                 <div class="d-flex menu-bar gap-2 ">
-                    <div class="d-flex align-items-baseline  coins ">
-                        <p class="coin-ico  ">0.00</p>
+                    <div class="d-flex align-items-center coins ">
+                        <div class="d-flex  align-items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16px" height="16px"
+                                version="1.1"
+                                style="  shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                viewBox="0 0 6.85 6.85" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                                <defs>
+
+                                </defs>
+                                <g id="Слой_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer" />
+                                    <path class="fil0" fill="#69dd89"
+                                        d="M3.43 0c1.89,0 3.42,1.53 3.42,3.43 0,1.89 -1.53,3.42 -3.42,3.42 -1.9,0 -3.43,-1.53 -3.43,-3.42 0,-1.9 1.53,-3.43 3.43,-3.43zm-1.13 3.27l0.67 -1.23c0.04,-0.07 0.11,-0.11 0.18,-0.11l0.05 0c0.1,0 0.18,0.07 0.2,0.17l0.5 2.48c0.02,0.06 0,0.12 -0.04,0.17 -0.04,0.05 -0.1,0.08 -0.16,0.08l-0.55 0c-0.1,0 -0.18,-0.07 -0.2,-0.17l-0.1 -0.52 -0.36 0.67c-0.03,0.06 -0.1,0.1 -0.18,0.1l-0.04 0c-0.08,0 -0.14,-0.03 -0.18,-0.1l-0.41 -0.71 -0.1 0.56c-0.02,0.1 -0.11,0.17 -0.21,0.17l-0.51 0c-0.07,0 -0.12,-0.03 -0.16,-0.08 -0.04,-0.05 -0.06,-0.11 -0.05,-0.17l0.5 -2.48c0.02,-0.1 0.11,-0.17 0.21,-0.17l0.04 0c0.07,0 0.14,0.04 0.18,0.11l0.72 1.23zm2.56 -0.27l0.38 -0.86c0.03,-0.08 0.11,-0.13 0.19,-0.13l0.56 0c0.08,0 0.14,0.04 0.18,0.1 0.04,0.06 0.04,0.13 0.01,0.2l-1.13 2.49c-0.03,0.07 -0.1,0.12 -0.19,0.12l-0.04 0c-0.08,0 -0.15,-0.05 -0.19,-0.12l-1.13 -2.49c-0.03,-0.07 -0.03,-0.14 0.01,-0.2 0.04,-0.06 0.11,-0.1 0.18,-0.1l0.61 0c0.08,0 0.16,0.05 0.19,0.13l0.37 0.86z" />
+                                </g>
+                            </svg>
+
+                            <p class="coin-ico m-0 ">0.00</p>
+                        </div>
                         <button class="button-deposit">Deposit</button>
                     </div>
                     <a href="#" class="user-ico  d-block ">
@@ -81,220 +122,736 @@
                         <div class="level">1 lvl</div>
                     </a>
                     <div class="notification d-flex align-items-center justify-content-center">
-                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 64.00 64.00" enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000" stroke="#000000" stroke-width="0.00064"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.128"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="#7084ac" d="M56,44c-1.832,0-4-2.168-4-4V20C52,8.973,43.027,0,32,0S12,8.973,12,20v20c0,1.793-2.207,4-4,4 c-2.211,0-4,1.789-4,4s1.789,4,4,4h48c2.211,0,4-1.789,4-4S58.211,44,56,44z"></path> <path fill="#7084ac" d="M32,64c4.418,0,8-3.582,8-8H24C24,60.418,27.582,64,32,64z"></path> </g> </g></svg>
+                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px"
+                            viewBox="0 0 64.00 64.00" enable-background="new 0 0 64 64" xml:space="preserve"
+                            fill="#000000" stroke="#000000" stroke-width="0.00064">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                stroke="#CCCCCC" stroke-width="0.128"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <path fill="#7084ac"
+                                        d="M56,44c-1.832,0-4-2.168-4-4V20C52,8.973,43.027,0,32,0S12,8.973,12,20v20c0,1.793-2.207,4-4,4 c-2.211,0-4,1.789-4,4s1.789,4,4,4h48c2.211,0,4-1.789,4-4S58.211,44,56,44z">
+                                    </path>
+                                    <path fill="#7084ac" d="M32,64c4.418,0,8-3.582,8-8H24C24,60.418,27.582,64,32,64z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
 
                     </div>
-                        <div class="notification d-flex align-items-center justify-content-center">
-                            <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7848 0.449982C13.8239 0.449982 14.7167 1.16546 14.9122 2.15495L14.9991 2.59495C15.3408 4.32442 17.1859 5.35722 18.9016 4.7794L19.3383 4.63233C20.3199 4.30175 21.4054 4.69358 21.9249 5.56605L22.7097 6.88386C23.2293 7.75636 23.0365 8.86366 22.2504 9.52253L21.9008 9.81555C20.5267 10.9672 20.5267 13.0328 21.9008 14.1844L22.2504 14.4774C23.0365 15.1363 23.2293 16.2436 22.7097 17.1161L21.925 18.4339C21.4054 19.3064 20.3199 19.6982 19.3382 19.3676L18.9017 19.2205C17.1859 18.6426 15.3408 19.6754 14.9991 21.405L14.9122 21.845C14.7167 22.8345 13.8239 23.55 12.7848 23.55H11.2152C10.1761 23.55 9.28331 22.8345 9.08781 21.8451L9.00082 21.4048C8.65909 19.6754 6.81395 18.6426 5.09822 19.2205L4.66179 19.3675C3.68016 19.6982 2.59465 19.3063 2.07505 18.4338L1.2903 17.1161C0.770719 16.2436 0.963446 15.1363 1.74956 14.4774L2.09922 14.1844C3.47324 13.0327 3.47324 10.9672 2.09922 9.8156L1.74956 9.52254C0.963446 8.86366 0.77072 7.75638 1.2903 6.8839L2.07508 5.56608C2.59466 4.69359 3.68014 4.30176 4.66176 4.63236L5.09831 4.77939C6.81401 5.35722 8.65909 4.32449 9.00082 2.59506L9.0878 2.15487C9.28331 1.16542 10.176 0.449982 11.2152 0.449982H12.7848ZM12 15.3C13.8225 15.3 15.3 13.8225 15.3 12C15.3 10.1774 13.8225 8.69998 12 8.69998C10.1774 8.69998 8.69997 10.1774 8.69997 12C8.69997 13.8225 10.1774 15.3 12 15.3Z" fill="#7084ac"></path> </g></svg>
-  </div>
-  
+                    <div class="notification d-flex align-items-center justify-content-center">
+                        <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.7848 0.449982C13.8239 0.449982 14.7167 1.16546 14.9122 2.15495L14.9991 2.59495C15.3408 4.32442 17.1859 5.35722 18.9016 4.7794L19.3383 4.63233C20.3199 4.30175 21.4054 4.69358 21.9249 5.56605L22.7097 6.88386C23.2293 7.75636 23.0365 8.86366 22.2504 9.52253L21.9008 9.81555C20.5267 10.9672 20.5267 13.0328 21.9008 14.1844L22.2504 14.4774C23.0365 15.1363 23.2293 16.2436 22.7097 17.1161L21.925 18.4339C21.4054 19.3064 20.3199 19.6982 19.3382 19.3676L18.9017 19.2205C17.1859 18.6426 15.3408 19.6754 14.9991 21.405L14.9122 21.845C14.7167 22.8345 13.8239 23.55 12.7848 23.55H11.2152C10.1761 23.55 9.28331 22.8345 9.08781 21.8451L9.00082 21.4048C8.65909 19.6754 6.81395 18.6426 5.09822 19.2205L4.66179 19.3675C3.68016 19.6982 2.59465 19.3063 2.07505 18.4338L1.2903 17.1161C0.770719 16.2436 0.963446 15.1363 1.74956 14.4774L2.09922 14.1844C3.47324 13.0327 3.47324 10.9672 2.09922 9.8156L1.74956 9.52254C0.963446 8.86366 0.77072 7.75638 1.2903 6.8839L2.07508 5.56608C2.59466 4.69359 3.68014 4.30176 4.66176 4.63236L5.09831 4.77939C6.81401 5.35722 8.65909 4.32449 9.00082 2.59506L9.0878 2.15487C9.28331 1.16542 10.176 0.449982 11.2152 0.449982H12.7848ZM12 15.3C13.8225 15.3 15.3 13.8225 15.3 12C15.3 10.1774 13.8225 8.69998 12 8.69998C10.1774 8.69998 8.69997 10.1774 8.69997 12C8.69997 13.8225 10.1774 15.3 12 15.3Z"
+                                    fill="#7084ac"></path>
+                            </g>
+                        </svg>
+                    </div>
+
                 </div>
 
 
             </div>
-            <img src="./img/ew.jpeg" class="ew" alt="game">
-            <div class="player-columns">
-                <div class="wheel-game-color">
-                    
-                    <div class="color-header">
-                        <div class="color-header__left">
-                            <div  class="color-header__title color-header__title-first"> 2x </div>
-                            <div  class="color-header__bank currency_CSF">10.31
-
-                            </div>
+            <section class="d-flex">
+                <div class="">
+                    <div class="bet_field">
+                        <div class="bf_header bfw">
+                            <span class="bf_title ">Колесо</span>
+                            <div class="bf_i"></div>
                         </div>
-                        <div  class="color-header__users">
-                            <div  class="color-header__icon icon icon_users-bold">
+                        <div class="bf_body ">
+                            <div class="bf_balance mb-3 ">
+
+                                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M22.0002 12.6216V14.6816C22.0002 15.2416 21.5402 15.7016 20.9702 15.7016H19.0402C17.9602 15.7016 16.9702 14.9116 16.8802 13.8316C16.8202 13.2016 17.0602 12.6116 17.4802 12.2016C17.8502 11.8216 18.3602 11.6016 18.9202 11.6016H20.9702C21.5402 11.6016 22.0002 12.0616 22.0002 12.6216Z"
+                                            fill="#1a3d36"></path>
+                                        <path
+                                            d="M15.38 13.9584C15.29 12.9084 15.67 11.8784 16.43 11.1284C17.07 10.4784 17.96 10.0984 18.92 10.0984H19.49C19.77 10.0984 20 9.86844 19.96 9.58844C19.69 7.64844 18.01 6.14844 16 6.14844H6C3.79 6.14844 2 7.93844 2 10.1484V17.1484C2 19.3584 3.79 21.1484 6 21.1484H16C18.02 21.1484 19.69 19.6484 19.96 17.7084C20 17.4284 19.77 17.1984 19.49 17.1984H19.04C17.14 17.1984 15.54 15.7784 15.38 13.9584ZM13 11.8984H7C6.59 11.8984 6.25 11.5684 6.25 11.1484C6.25 10.7284 6.59 10.3984 7 10.3984H13C13.41 10.3984 13.75 10.7384 13.75 11.1484C13.75 11.5584 13.41 11.8984 13 11.8984Z"
+                                            fill="#1a3d36"></path>
+                                        <path
+                                            d="M14.2106 3.98156C14.4706 4.25156 14.2406 4.65156 13.8606 4.65156H6.03064C4.94064 4.65156 3.92064 4.97156 3.07064 5.52156C2.68064 5.77156 2.15064 5.50156 2.34064 5.07156C2.90064 3.76156 4.21064 2.85156 5.72064 2.85156H11.3406C12.5006 2.85156 13.5306 3.26156 14.2106 3.98156Z"
+                                            fill="#1a3d36"></path>
+                                    </g>
+                                </svg>
+                                <div>
+
+
+
+                                    <div class="d-flex align-items-center gap-1">
+                                        <span class="bac_currency">
+                                            <?php //echo $user_balance['coin']; ?>
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="15px"
+                                                height="15px" version="1.1"
+                                                style="  shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                                viewBox="0 0 6.85 6.85" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                                                <defs>
+
+                                                </defs>
+                                                <g id="Слой_x0020_1">
+                                                    <metadata id="CorelCorpID_0Corel-Layer" />
+                                                    <path class="fil0" fill="#1a3d36"
+                                                        d="M3.43 0c1.89,0 3.42,1.53 3.42,3.43 0,1.89 -1.53,3.42 -3.42,3.42 -1.9,0 -3.43,-1.53 -3.43,-3.42 0,-1.9 1.53,-3.43 3.43,-3.43zm-1.13 3.27l0.67 -1.23c0.04,-0.07 0.11,-0.11 0.18,-0.11l0.05 0c0.1,0 0.18,0.07 0.2,0.17l0.5 2.48c0.02,0.06 0,0.12 -0.04,0.17 -0.04,0.05 -0.1,0.08 -0.16,0.08l-0.55 0c-0.1,0 -0.18,-0.07 -0.2,-0.17l-0.1 -0.52 -0.36 0.67c-0.03,0.06 -0.1,0.1 -0.18,0.1l-0.04 0c-0.08,0 -0.14,-0.03 -0.18,-0.1l-0.41 -0.71 -0.1 0.56c-0.02,0.1 -0.11,0.17 -0.21,0.17l-0.51 0c-0.07,0 -0.12,-0.03 -0.16,-0.08 -0.04,-0.05 -0.06,-0.11 -0.05,-0.17l0.5 -2.48c0.02,-0.1 0.11,-0.17 0.21,-0.17l0.04 0c0.07,0 0.14,0.04 0.18,0.11l0.72 1.23zm2.56 -0.27l0.38 -0.86c0.03,-0.08 0.11,-0.13 0.19,-0.13l0.56 0c0.08,0 0.14,0.04 0.18,0.1 0.04,0.06 0.04,0.13 0.01,0.2l-1.13 2.49c-0.03,0.07 -0.1,0.12 -0.19,0.12l-0.04 0c-0.08,0 -0.15,-0.05 -0.19,-0.12l-1.13 -2.49c-0.03,-0.07 -0.03,-0.14 0.01,-0.2 0.04,-0.06 0.11,-0.1 0.18,-0.1l0.61 0c0.08,0 0.16,0.05 0.19,0.13l0.37 0.86z" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <div class="bal_value">
+                                            0
+                                            <?php //echo number_format($user_balance['amount'], 8, '.', ',') ?>
+                                        </div>
+                                    </div>
+                                    <div class="user-balans">Баланс</div>
+
+
+                                </div>
 
                             </div>
-                            <div  class="color-header__users-count">
-                                <svg fill="#cddbff" width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><circle cx="435.2" cy="409.5" r="102.4"></circle><path d="M588.8 409.5c0 17.6-3.1 34.5-8.6 50.3 2.9.2 5.7.9 8.6.9 56.6 0 102.4-45.8 102.4-102.4 0-56.6-45.8-102.4-102.4-102.4-26.1 0-49.7 10.1-67.8 26.2 40.9 27.7 67.8 74.4 67.8 127.4zM435.2 563.1c-128 0-179.2 25.6-179.2 102.4v102.6h358.4V665.5c0-77.3-51.2-102.4-179.2-102.4z"></path><path d="M588.8 511.9c-14.5 0-27.9.4-40.5 1.1-2.3 2.5-4.6 4.9-7 7.2 63.7 13.5 124.2 49.5 124.2 145.3v51.4H768V614.3c0-77.3-51.2-102.4-179.2-102.4z"></path></g></svg>
-                                9 
 
+                            <div class="bet_status hidden d-none  no_select">
+                                <div class="bf_header bfh_s">
+                                    Ставка
+                                </div>
+                                <div class="bs_bet_value"></div>
+                                <div class="na">на</div>
+                                <div class="bcf_container">
+                                    <div class="bcf">x</div>
+                                </div>
+                            </div>
+
+                            <div class="bet_screen">
+                                <div class="form_subheader">
+                                    Выберите цвет
+                                </div>
+                                <div class="bet_color_selector no_select mb-3 ">
+                                    <div class="bcs bcs_blue">X 2</div>
+                                    <div class="bcs bcs_green">X 3</div>
+                                    <div class="bcs bcs_violet">X 5</div>
+                                    <div class="bcs bcs_gold">X 34</div>
+                                </div>
+                                <div class="form_subheader">
+                                    Введите сумму ставки
+                                </div>
+                                <div class="bet_sum_selector">
+                                    <div class="sum_wrapper">
+                                        <div class="sum_symbol">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="15px"
+                                                height="15px" version="1.1"
+                                                style="  shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                                viewBox="0 0 6.85 6.85" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+                                                <defs>
+
+                                                </defs>
+                                                <g id="Слой_x0020_1">
+                                                    <metadata id="CorelCorpID_0Corel-Layer" />
+                                                    <path class="fil0" fill="#b3c3ec"
+                                                        d="M3.43 0c1.89,0 3.42,1.53 3.42,3.43 0,1.89 -1.53,3.42 -3.42,3.42 -1.9,0 -3.43,-1.53 -3.43,-3.42 0,-1.9 1.53,-3.43 3.43,-3.43zm-1.13 3.27l0.67 -1.23c0.04,-0.07 0.11,-0.11 0.18,-0.11l0.05 0c0.1,0 0.18,0.07 0.2,0.17l0.5 2.48c0.02,0.06 0,0.12 -0.04,0.17 -0.04,0.05 -0.1,0.08 -0.16,0.08l-0.55 0c-0.1,0 -0.18,-0.07 -0.2,-0.17l-0.1 -0.52 -0.36 0.67c-0.03,0.06 -0.1,0.1 -0.18,0.1l-0.04 0c-0.08,0 -0.14,-0.03 -0.18,-0.1l-0.41 -0.71 -0.1 0.56c-0.02,0.1 -0.11,0.17 -0.21,0.17l-0.51 0c-0.07,0 -0.12,-0.03 -0.16,-0.08 -0.04,-0.05 -0.06,-0.11 -0.05,-0.17l0.5 -2.48c0.02,-0.1 0.11,-0.17 0.21,-0.17l0.04 0c0.07,0 0.14,0.04 0.18,0.11l0.72 1.23zm2.56 -0.27l0.38 -0.86c0.03,-0.08 0.11,-0.13 0.19,-0.13l0.56 0c0.08,0 0.14,0.04 0.18,0.1 0.04,0.06 0.04,0.13 0.01,0.2l-1.13 2.49c-0.03,0.07 -0.1,0.12 -0.19,0.12l-0.04 0c-0.08,0 -0.15,-0.05 -0.19,-0.12l-1.13 -2.49c-0.03,-0.07 -0.03,-0.14 0.01,-0.2 0.04,-0.06 0.11,-0.1 0.18,-0.1l0.61 0c0.08,0 0.16,0.05 0.19,0.13l0.37 0.86z" />
+                                                </g>
+                                            </svg>
+                                        </div>
+
+                                        <input class="sum_value" value="0.01000000" default="0.01000000" />
+                                        <button class="reset_to_min">
+                                            <svg viewBox="0 0 16 16" height="25px" width="25px"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path id="path-1"
+                                                        d="m.902369.195262c.195262.195262.195262.511845 0 .707107s-.511845.195262-.707107 0c-.195262-.195262-.195262-.511845 0-.707107.195262-.195262.511845-.195262.707107 0"
+                                                        fill="#000000" style="fill: rgb(255, 255, 255);"></path>
+                                                </defs>
+                                                <use transform="translate(9.967 12.951)" xlink:href="#path-1"></use>
+                                                <use transform="translate(7.967 14.951)" xlink:href="#path-1"></use>
+                                                <path
+                                                    d="m1.80474.390524c.390524.390524.390524 1.02369 0 1.41421-.390524.390524-1.02369.390524-1.41421 0-.390524-.390524-.390524-1.02369 0-1.41421.390524-.390524 1.02369-.390524 1.41421 0"
+                                                    transform="translate(10.918 13.902)" fill="#000000"
+                                                    style="fill: rgb(255, 255, 255);"></path>
+                                                <path
+                                                    d="m4.59253 0c-.553711 0-1.0752.244141-1.43018.669922l-3.16235 3.79462c.233032.107178.457825.233765.669189.384582.595642.425293 1.0329.982178 1.3338 1.5954l3.78192-3.15204c.425781-.35498.669922-.876465.669922-1.43018-.0000002-1.02686-.835449-1.8623-1.8623-1.8623z"
+                                                    transform="translate(9.561)" fill="#000000"
+                                                    style="fill: rgb(255, 255, 255);"></path>
+                                                <path
+                                                    d="m9.66553.913574v-.0004882c-1.28027-.913086-3.05664-.811035-4.22217.240723-.728027.657227-2.94287 2.65674-5.01807 3.10791l-.425293.0927734s.0317383 1.396.454834 2.02557c.828674-.0925903 1.49951-.263977 1.72986-.494324-.509277.602356-.896667 1.0379-1.19678 1.36371.246826.329895.550781.643066.892212.945068 1.22424-.520874 2.31616-1.42108 2.67242-1.7774-.718018 1.19672-1.30194 2.09552-1.60895 2.55853.683228-.397522 1.51593-.914185 2.29523-1.49292-.291321.291321-.673462 1.20648-.982544 2.25171.344604.16626 1.31354.514587 1.31354.514587 1.48779-.113281 4.07178-3.61816 4.94189-4.95898.937988-1.44482.566406-3.36768-.846191-4.37646z"
+                                                    transform="translate(-.016 4.75)" fill="#000000"
+                                                    style="fill: rgb(255, 255, 255);"></path>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                                <div class="quickbets_selector no_select">
+                                    <div class="quik_bet" data-val="0.01000000"><span>+&nbsp&nbsp</span>1</div>
+                                    <div class="quik_bet" data-val="0.05000000"><span>+&nbsp&nbsp</span>5</div>
+                                    <div class="quik_bet" data-val="0.10000000"><span>+&nbsp&nbsp</span>10</div>
+                                    <div class="quik_bet" data-val="1.534599348">max</div>
+                                </div>
+
+                                <button class="set_bet bet_off">
+                                    Поставить
+                                </button>
                             </div>
                         </div>
                     </div>
-           <div>
-            <div class="bets">
-                <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
-                <div class="user-info">
-                   <div class="user-bets">
-                    2.02
-                    </div> 
-                    <div class="user-name">
-                        Epic
-                    </div> 
-                    
-                </div>
-
-        </div>
-        <div class="bets">
-            <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
-            <div class="user-info">
-               <div class="user-bets">
-                2.02
-                </div> 
-                <div class="user-name">
-                    Epic
-                </div> 
-                
-            </div>
-
-    </div>
-           </div>
-                </div>
-                <div class="wheel-game-color">
-                    
-                    <div class="color-header">
-                        <div class="color-header__left">
-                            <div  class="color-header__title color-header__title-second"> 3x </div>
-                            <div  class="color-header__bank currency_CSF">10.31
-
-                            </div>
+                    <div class="raund-info">
+                        <div>
+                            <svg width="18px" height="18px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                                fill="#66d08a">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>security-verified-solid</title>
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="invisible_box" data-name="invisible box">
+                                            <rect width="48" height="48" fill="none"></rect>
+                                        </g>
+                                        <g id="icons_Q2" data-name="icons Q2">
+                                            <path
+                                                d="M24,2S6,7.1,6,8V26.2c0,9.2,13.3,17.3,17,19.5a1.8,1.8,0,0,0,2,0c3.8-2.1,17-10.3,17-19.5V8C42,7.1,24,2,24,2Zm9.4,16.4-11,11a1.9,1.9,0,0,1-2.8,0l-4.9-4.9a2.2,2.2,0,0,1-.4-2.7,2,2,0,0,1,3.1-.2L21,25.2l9.6-9.6a2,2,0,0,1,2.8,2.8Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span> Раунд </span>
+                            <span id="numder-of-game"> #2345678</span>
                         </div>
-                        <div  class="color-header__users">
-                            <div  class="color-header__icon icon icon_users-bold">
+                        <div>
+                            <span>5tgy89..6789<span>
+                                    <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M15.24 2H11.3458C9.58159 1.99999 8.18418 1.99997 7.09054 2.1476C5.96501 2.29953 5.05402 2.61964 4.33559 3.34096C3.61717 4.06227 3.29833 4.97692 3.14701 6.10697C2.99997 7.205 2.99999 8.60802 3 10.3793V16.2169C3 17.725 3.91995 19.0174 5.22717 19.5592C5.15989 18.6498 5.15994 17.3737 5.16 16.312L5.16 11.3976L5.16 11.3024C5.15993 10.0207 5.15986 8.91644 5.27828 8.03211C5.40519 7.08438 5.69139 6.17592 6.4253 5.43906C7.15921 4.70219 8.06404 4.41485 9.00798 4.28743C9.88877 4.16854 10.9887 4.1686 12.2652 4.16867L12.36 4.16868H15.24L15.3348 4.16867C16.6113 4.1686 17.7088 4.16854 18.5896 4.28743C18.0627 2.94779 16.7616 2 15.24 2Z"
+                                                fill="#66d08a"></path>
+                                            <path
+                                                d="M6.6001 11.3974C6.6001 8.67119 6.6001 7.3081 7.44363 6.46118C8.28716 5.61426 9.64481 5.61426 12.3601 5.61426H15.2401C17.9554 5.61426 19.313 5.61426 20.1566 6.46118C21.0001 7.3081 21.0001 8.6712 21.0001 11.3974V16.2167C21.0001 18.9429 21.0001 20.306 20.1566 21.1529C19.313 21.9998 17.9554 21.9998 15.2401 21.9998H12.3601C9.64481 21.9998 8.28716 21.9998 7.44363 21.1529C6.6001 20.306 6.6001 18.9429 6.6001 16.2167V11.3974Z"
+                                                fill="#66d08a"></path>
+                                        </g>
+                                    </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="d-flex">
+                    <div class="wheal-main">
+                        <div class="mheal-game-display">
+                            <div class="wheel_wrapper">
+                                <div class="wheel_top">
+                                    <div class="wheel_cup">
 
-                            </div>
-                            <div  class="color-header__users-count">
-                                <svg fill="#cddbff" width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><circle cx="435.2" cy="409.5" r="102.4"></circle><path d="M588.8 409.5c0 17.6-3.1 34.5-8.6 50.3 2.9.2 5.7.9 8.6.9 56.6 0 102.4-45.8 102.4-102.4 0-56.6-45.8-102.4-102.4-102.4-26.1 0-49.7 10.1-67.8 26.2 40.9 27.7 67.8 74.4 67.8 127.4zM435.2 563.1c-128 0-179.2 25.6-179.2 102.4v102.6h358.4V665.5c0-77.3-51.2-102.4-179.2-102.4z"></path><path d="M588.8 511.9c-14.5 0-27.9.4-40.5 1.1-2.3 2.5-4.6 4.9-7 7.2 63.7 13.5 124.2 49.5 124.2 145.3v51.4H768V614.3c0-77.3-51.2-102.4-179.2-102.4z"></path></g></svg>
-                                9 
+                                        <div class="item">
+                                            <h2>0kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</h2>
+                                            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                                                <linearGradient id="grad--linear-1">
+                                                    <stop offset="0%" stop-color="#61d891" class="stop-1" />
+                                                    <stop offset="50%" stop-color="#4d71f3" class="stop-2" />
+                                                    <stop offset="100%" stop-color="#f88335" class="stop-3" />
+                                                </linearGradient>
+                                                <circle id="circle" class="circle_animation" r="69.85699" cy="81"
+                                                    cx="81" stroke-width="8" stroke="url(#grad--linear-1)"
+                                                    fill="none" />
+                                            </svg>
+                                        </div>
 
+                                        <div class="spingoing hidden">
+                                            <div>
+                                                <div>
+                                                    <div>
+                                                        <div>
+                                                            <div>
+                                                                <div>
+                                                                    <div>
+                                                                        <div>
+                                                                            <div>
+                                                                                <div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="spinresult hidden">
+                                            <div class="spr_title">Выпал</div>
+                                            <div class="spr spr_blue hidden">X 2</div>
+                                            <div class="spr spr_green hidden">X 3</div>
+                                            <div class="spr spr_violet hidden">X 5</div>
+                                            <div class="spr spr_gold hidden">X 34</div>
+                                            <div class="spr spr_red hidden">Халява!</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="wheel_body">
+
+                                    <div class="option c_blue cc_01">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_red">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_violet">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_violet">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_red">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue cc_11">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_gold">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_violet">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_red">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green cc_21">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_violet">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_red">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_violet">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green cc_31">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_red">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_violet">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_blue">
+                                        <div class="row"></div>
+                                    </div>
+                                    <div class="option c_green">
+                                        <div class="row"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-           <div>
-            <div class="bets">
-                <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
-                <div class="user-info">
-                   <div class="user-bets">
-                    2.02
-                    </div> 
-                    <div class="user-name">
-                        Epic
-                    </div> 
-                    
-                </div>
+                    <div class="bet_win_field">
+                        <div class="win_field">
+                            <div class="flex-row wheel_stats">
+                                <div class="col win-status-bar mb-3">
+                                    <div class="fs_subheader">
+                                        Последние  <br> 100 раундов
+                                    </div>
+                                    <div class="last_blocks no_select">
+                                        <div class="win-stistic-block bcs_blue wd_blue">
+                                            <?php //echo $ini_wd['stats']['blue']; ?>7
+                                        </div>
+                                        <div class="win-stistic-block bcs_green wd_green">
+                                            <?php //echo $ini_wd['stats']['green']; ?>12
+                                        </div>
+                                        
+                                        <div class=" win-stistic-block bcs_violet wd_violet">9
+                                            <?php // echo $ini_wd['stats']['violet']; ?>
+                                        </div>
+                                        <div class="win-stistic-block bcs_gold wd_gold">0
+                                            <?php //echo $ini_wd['stats']['gold']; ?>
+                                        </div>
+                                       
+                                        <div class="win-stistic-block bcs_red wd_red">4
+                                            <?php //echo $ini_wd['stats']['red']; ?>
+                                        </div>
+                                    </div>
+                                </div>
 
-        </div>
-        <div class="bets">
-            <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
-            <div class="user-info">
-               <div class="user-bets">
-                2.02
-                </div> 
-                <div class="user-name">
-                    Epic
-                </div> 
-                
-            </div>
+                                <div class="col">
+                                    <div class="last_colors">
+                                        <div class="fs_subheader mb-2">
+                                            Предыдущие игры
+                                        </div>
+                                        <a
+                                            href="https://south1.net<?php //echo JText::_('COM_BM_LANGUAGE_PREFIX');?>/wheel-history">
+                                            <div class="last_colors_monitor d-flex">
 
-    </div>
-           </div>
-                </div>
-                <div class="wheel-game-color">
-                    
-                    <div class="color-header">
-                        <div class="color-header__left">
-                            <div  class="color-header__title color-header__title-third"> 4x </div>
-                            <div  class="color-header__bank currency_CSF">10.31
+                                                <?php// for ($i=0; $i < count($ini_wd['last_n']); $i++) : ?>
 
-                            </div>
-                        </div>
-                        <div  class="color-header__users">
-                            <div  class="color-header__icon icon icon_users-bold">
+                                                <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_green <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_blue <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_green <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_green <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_blue <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <?php// endfor; ?>
 
-                            </div>
-                            <div  class="color-header__users-count">
-                                <svg fill="#cddbff" width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><circle cx="435.2" cy="409.5" r="102.4"></circle><path d="M588.8 409.5c0 17.6-3.1 34.5-8.6 50.3 2.9.2 5.7.9 8.6.9 56.6 0 102.4-45.8 102.4-102.4 0-56.6-45.8-102.4-102.4-102.4-26.1 0-49.7 10.1-67.8 26.2 40.9 27.7 67.8 74.4 67.8 127.4zM435.2 563.1c-128 0-179.2 25.6-179.2 102.4v102.6h358.4V665.5c0-77.3-51.2-102.4-179.2-102.4z"></path><path d="M588.8 511.9c-14.5 0-27.9.4-40.5 1.1-2.3 2.5-4.6 4.9-7 7.2 63.7 13.5 124.2 49.5 124.2 145.3v51.4H768V614.3c0-77.3-51.2-102.4-179.2-102.4z"></path></g></svg>
-                                9 
+                                            </div>
+                                        </a>
 
-                            </div>
-                        </div>
-                    </div>
-           <div>
-            <div class="bets">
-                <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
-                <div class="user-info">
-                   <div class="user-bets">
-                    2.02
-                    </div> 
-                    <div class="user-name">
-                        Epic
-                    </div> 
-                    
-                </div>
-
-        </div>
-        <div class="bets">
-            <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
-            <div class="user-info">
-               <div class="user-bets">
-                2.02
-                </div> 
-                <div class="user-name">
-                    Epic
-                </div> 
-                
-            </div>
-
-    </div>
-           </div>
-                </div>
-                <div class="wheel-game-color">
-                    
-                    <div class="color-header">
-                        <div class="color-header__left">
-                            <div  class="color-header__title color-header__title-firth"> x34 </div>
-                            <div  class="color-header__bank currency_CSF">10.31
-
-                            </div>
-                        </div>
-                        <div  class="color-header__users">
-                            <div  class="color-header__icon icon icon_users-bold">
-
-                            </div>
-                            <div  class="color-header__users-count">
-                                <svg fill="#cddbff" width="20px" height="20px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><circle cx="435.2" cy="409.5" r="102.4"></circle><path d="M588.8 409.5c0 17.6-3.1 34.5-8.6 50.3 2.9.2 5.7.9 8.6.9 56.6 0 102.4-45.8 102.4-102.4 0-56.6-45.8-102.4-102.4-102.4-26.1 0-49.7 10.1-67.8 26.2 40.9 27.7 67.8 74.4 67.8 127.4zM435.2 563.1c-128 0-179.2 25.6-179.2 102.4v102.6h358.4V665.5c0-77.3-51.2-102.4-179.2-102.4z"></path><path d="M588.8 511.9c-14.5 0-27.9.4-40.5 1.1-2.3 2.5-4.6 4.9-7 7.2 63.7 13.5 124.2 49.5 124.2 145.3v51.4H768V614.3c0-77.3-51.2-102.4-179.2-102.4z"></path></g></svg>
-                                9 
-
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-           <div>
-            <div class="bets">
-                <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
-                <div class="user-info">
-                   <div class="user-bets">
-                    2.02
-                    </div> 
-                    <div class="user-name">
-                        Epic
-                    </div> 
-                    
+                    </div>
+                    <div class="player-columns">
+                        <div class="wheel-game-color">
+
+                            <div class="color-header">
+                                <div class="color-header__left">
+                                    <div class="color-header__title color-header__title-first"> 2x </div>
+                                    <div class="color-header__bank currency_CSF">10.31
+
+                                    </div>
+                                </div>
+                                <div class="color-header__users">
+                                    <div class="color-header__icon icon icon_users-bold">
+
+                                    </div>
+                                    <div class="color-header__users-count">
+                                        <svg fill="#cddbff" width="20px" height="20px" viewBox="0 0 1024 1024"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <circle cx="435.2" cy="409.5" r="102.4"></circle>
+                                                <path
+                                                    d="M588.8 409.5c0 17.6-3.1 34.5-8.6 50.3 2.9.2 5.7.9 8.6.9 56.6 0 102.4-45.8 102.4-102.4 0-56.6-45.8-102.4-102.4-102.4-26.1 0-49.7 10.1-67.8 26.2 40.9 27.7 67.8 74.4 67.8 127.4zM435.2 563.1c-128 0-179.2 25.6-179.2 102.4v102.6h358.4V665.5c0-77.3-51.2-102.4-179.2-102.4z">
+                                                </path>
+                                                <path
+                                                    d="M588.8 511.9c-14.5 0-27.9.4-40.5 1.1-2.3 2.5-4.6 4.9-7 7.2 63.7 13.5 124.2 49.5 124.2 145.3v51.4H768V614.3c0-77.3-51.2-102.4-179.2-102.4z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        9
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bets">
+                                    <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
+                                    <div class="user-info">
+                                        <div class="user-bets">
+                                            2.02
+                                        </div>
+                                        <div class="user-name">
+                                            Epic
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="bets">
+                                    <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
+                                    <div class="user-info">
+                                        <div class="user-bets">
+                                            2.02
+                                        </div>
+                                        <div class="user-name">
+                                            Epic
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wheel-game-color">
+
+                            <div class="color-header">
+                                <div class="color-header__left">
+                                    <div class="color-header__title color-header__title-second"> 3x </div>
+                                    <div class="color-header__bank currency_CSF">10.31
+
+                                    </div>
+                                </div>
+                                <div class="color-header__users">
+                                    <div class="color-header__icon icon icon_users-bold">
+
+                                    </div>
+                                    <div class="color-header__users-count">
+                                        <svg fill="#cddbff" width="20px" height="20px" viewBox="0 0 1024 1024"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <circle cx="435.2" cy="409.5" r="102.4"></circle>
+                                                <path
+                                                    d="M588.8 409.5c0 17.6-3.1 34.5-8.6 50.3 2.9.2 5.7.9 8.6.9 56.6 0 102.4-45.8 102.4-102.4 0-56.6-45.8-102.4-102.4-102.4-26.1 0-49.7 10.1-67.8 26.2 40.9 27.7 67.8 74.4 67.8 127.4zM435.2 563.1c-128 0-179.2 25.6-179.2 102.4v102.6h358.4V665.5c0-77.3-51.2-102.4-179.2-102.4z">
+                                                </path>
+                                                <path
+                                                    d="M588.8 511.9c-14.5 0-27.9.4-40.5 1.1-2.3 2.5-4.6 4.9-7 7.2 63.7 13.5 124.2 49.5 124.2 145.3v51.4H768V614.3c0-77.3-51.2-102.4-179.2-102.4z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        9
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bets">
+                                    <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
+                                    <div class="user-info">
+                                        <div class="user-bets">
+                                            2.02
+                                        </div>
+                                        <div class="user-name">
+                                            Epic
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="bets">
+                                    <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
+                                    <div class="user-info">
+                                        <div class="user-bets">
+                                            2.02
+                                        </div>
+                                        <div class="user-name">
+                                            Epic
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wheel-game-color">
+
+                            <div class="color-header">
+                                <div class="color-header__left">
+                                    <div class="color-header__title color-header__title-third"> 4x </div>
+                                    <div class="color-header__bank currency_CSF">10.31
+
+                                    </div>
+                                </div>
+                                <div class="color-header__users">
+                                    <div class="color-header__icon icon icon_users-bold">
+
+                                    </div>
+                                    <div class="color-header__users-count">
+                                        <svg fill="#cddbff" width="20px" height="20px" viewBox="0 0 1024 1024"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <circle cx="435.2" cy="409.5" r="102.4"></circle>
+                                                <path
+                                                    d="M588.8 409.5c0 17.6-3.1 34.5-8.6 50.3 2.9.2 5.7.9 8.6.9 56.6 0 102.4-45.8 102.4-102.4 0-56.6-45.8-102.4-102.4-102.4-26.1 0-49.7 10.1-67.8 26.2 40.9 27.7 67.8 74.4 67.8 127.4zM435.2 563.1c-128 0-179.2 25.6-179.2 102.4v102.6h358.4V665.5c0-77.3-51.2-102.4-179.2-102.4z">
+                                                </path>
+                                                <path
+                                                    d="M588.8 511.9c-14.5 0-27.9.4-40.5 1.1-2.3 2.5-4.6 4.9-7 7.2 63.7 13.5 124.2 49.5 124.2 145.3v51.4H768V614.3c0-77.3-51.2-102.4-179.2-102.4z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        9
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bets">
+                                    <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
+                                    <div class="user-info">
+                                        <div class="user-bets">
+                                            2.02
+                                        </div>
+                                        <div class="user-name">
+                                            Epic
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="bets">
+                                    <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
+                                    <div class="user-info">
+                                        <div class="user-bets">
+                                            2.02
+                                        </div>
+                                        <div class="user-name">
+                                            Epic
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wheel-game-color">
+
+                            <div class="color-header">
+                                <div class="color-header__left">
+                                    <div class="color-header__title color-header__title-firth"> x34 </div>
+                                    <div class="color-header__bank currency_CSF">10.31
+
+                                    </div>
+                                </div>
+                                <div class="color-header__users">
+                                    <div class="color-header__icon icon icon_users-bold">
+
+                                    </div>
+                                    <div class="color-header__users-count">
+                                        <svg fill="#cddbff" width="20px" height="20px" viewBox="0 0 1024 1024"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                            </g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <circle cx="435.2" cy="409.5" r="102.4"></circle>
+                                                <path
+                                                    d="M588.8 409.5c0 17.6-3.1 34.5-8.6 50.3 2.9.2 5.7.9 8.6.9 56.6 0 102.4-45.8 102.4-102.4 0-56.6-45.8-102.4-102.4-102.4-26.1 0-49.7 10.1-67.8 26.2 40.9 27.7 67.8 74.4 67.8 127.4zM435.2 563.1c-128 0-179.2 25.6-179.2 102.4v102.6h358.4V665.5c0-77.3-51.2-102.4-179.2-102.4z">
+                                                </path>
+                                                <path
+                                                    d="M588.8 511.9c-14.5 0-27.9.4-40.5 1.1-2.3 2.5-4.6 4.9-7 7.2 63.7 13.5 124.2 49.5 124.2 145.3v51.4H768V614.3c0-77.3-51.2-102.4-179.2-102.4z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        9
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bets">
+                                    <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
+                                    <div class="user-info">
+                                        <div class="user-bets">
+                                            2.02
+                                        </div>
+                                        <div class="user-name">
+                                            Epic
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="bets">
+                                    <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
+                                    <div class="user-info">
+                                        <div class="user-bets">
+                                            2.02
+                                        </div>
+                                        <div class="user-name">
+                                            Epic
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-        </div>
-        <div class="bets">
-            <img src="./img/Безымянный-1.jpg" class=" bets-img" alt="usr">
-            <div class="user-info">
-               <div class="user-bets">
-                2.02
-                </div> 
-                <div class="user-name">
-                    Epic
-                </div> 
-                
-            </div>
+            </section>
 
-    </div>
-           </div>
-                </div>
-            </div>
-
-
-
-            
 
         </main>
 
