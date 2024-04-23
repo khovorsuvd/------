@@ -944,8 +944,7 @@ z-index: 4;}
     }
     
     .last_blocks{
-        display: grid;
-    grid-template-columns: 2fr 2fr;
+        
     gap: .5rem;
     }
     .win-stistic-block{

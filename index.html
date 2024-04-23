@@ -222,7 +222,7 @@
 
             </div>
             <section class="d-flex">
-                <div class="">
+                <div class="me-3 ">
                     <div class="bet_field">
                         <div class="bf_header bfw">
                             <span class="bf_title ">Колесо</span>
@@ -409,68 +409,10 @@
                                     </svg>
                         </div>
                     </div>
-                    <div class="bet_win_field">
-                        <div class="win_field d-flex flex-column  justify-content-around align-content-between  ">
-
-                            <div class=" win-status-bar mb-3 p-2 ">
-                                <div class="fs_subheader mb-3">
-                                    Последние <br> 100 раундов
-                                </div>
-                                <div class="last_blocks no_select">
-                                    <div class="win-stistic-block bcs_blue wd_blue">
-                                        <?php //echo $ini_wd['stats']['blue']; ?>7
-                                    </div>
-                                    <div class="win-stistic-block bcs_green wd_green">
-                                        <?php //echo $ini_wd['stats']['green']; ?>12
-                                    </div>
-
-                                    <div class=" win-stistic-block bcs_violet wd_violet">9
-                                        <?php // echo $ini_wd['stats']['violet']; ?>
-                                    </div>
-                                    <div class="win-stistic-block bcs_gold wd_gold">0
-                                        <?php //echo $ini_wd['stats']['gold']; ?>
-                                    </div>
-
-                                    <div class="win-stistic-block bcs_red wd_red">4
-                                        <?php //echo $ini_wd['stats']['red']; ?>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="">
-                                <div class="last_colors">
-                                    <div class="fs_subheader mb-2">
-                                        Предыдущие<br> игры
-                                    </div>
-                                    <a
-                                        href="https://south1.net<?php //echo JText::_('COM_BM_LANGUAGE_PREFIX');?>/wheel-history">
-                                        <div class="last_colors_monitor d-flex">
-
-                                            <?php// for ($i=0; $i < count($ini_wd['last_n']); $i++) : ?>
-
-                                            <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
-                                            <div class="lc lc_green <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
-                                            <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
-                                            <div class="lc lc_blue <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
-                                            <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
-                                            <div class="lc lc_green <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
-                                            <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
-                                            <div class="lc lc_green <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
-                                            <div class="lc lc_blue <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
-                                            <?php// endfor; ?>
-
-                                        </div>
-                                    </a>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
                 <div class="d-flex flex-column">
                     <div class="d-flex">
-                        <div class="wheal-main">
+                        <div class="wheal-main  me-2">
                             <div class="mheal-game-display">
                                 <div class="wheel_wrapper">
                                     <div class="wheel_top">
@@ -652,7 +594,64 @@
                                 </div>
                             </div>
                         </div>
-                        
+                        <div class="bet_win_field">
+                            <div class="win_field d-flex flex-column  justify-content-around align-content-between  ">
+
+                                <div class=" win-status-bar mb-3 p-2 ">
+                                    <div class="fs_subheader mb-3">
+                                        Последние <br> 100 раундов
+                                    </div>
+                                    <div class="last_blocks no_select d-flex">
+                                        <div class="win-stistic-block bcs_blue wd_blue">
+                                            <?php //echo $ini_wd['stats']['blue']; ?>7
+                                        </div>
+                                        <div class="win-stistic-block bcs_green wd_green">
+                                            <?php //echo $ini_wd['stats']['green']; ?>12
+                                        </div>
+
+                                        <div class=" win-stistic-block bcs_violet wd_violet">9
+                                            <?php // echo $ini_wd['stats']['violet']; ?>
+                                        </div>
+                                        <div class="win-stistic-block bcs_gold wd_gold">0
+                                            <?php //echo $ini_wd['stats']['gold']; ?>
+                                        </div>
+
+                                        <div class="win-stistic-block bcs_red wd_red">4
+                                            <?php //echo $ini_wd['stats']['red']; ?>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <div class="last_colors">
+                                        <div class="fs_subheader mb-2">
+                                            Предыдущие<br> игры
+                                        </div>
+                                        <a
+                                            href="https://south1.net<?php //echo JText::_('COM_BM_LANGUAGE_PREFIX');?>/wheel-history">
+                                            <div class="last_colors_monitor d-flex">
+
+                                                <?php// for ($i=0; $i < count($ini_wd['last_n']); $i++) : ?>
+
+                                                <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_green <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_blue <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_green <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_red <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_green <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <div class="lc lc_blue <?php// echo $ini_wd['last_n'][$i]; ?>"></div>
+                                                <?php// endfor; ?>
+
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                     <div class="player-columns">
                         <div class="wheel-game-color">
