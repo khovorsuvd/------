@@ -172,6 +172,44 @@ main {
     filter: grayscale(30%);
 
 }
+.text-aside {
+    position: relative;
+    display: inline-block;
+    /* Если вы хотите точки под текстом при наведении мыши */
+  }
+  
+  /* Текст подсказки */
+  .text-aside .tooltiptext {
+    visibility: hidden;
+    
+    background-color: #333f70;
+    color: #fff;
+    text-align: center;
+    padding: 10px ;
+    border-radius: 6px;
+   
+    /* Разместите текст всплывающей подсказки - см. Примеры ниже! */
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+  left: 105%;
+  }
+  
+  /* Показывать текст всплывающей подсказки при наведении указателя мыши на контейнер всплывающей подсказки */
+  .text-aside:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 .header a {
     color: white;
@@ -878,16 +916,16 @@ z-index: 4;}
 
 
     .bet_win_field{
-        display: block;
+        display: flex;
     
     background: linear-gradient(180deg, #0a0c20 0%, #11142e 100%);
     border-radius: 2.5rem;
-    padding: 2rem;
+    padding: 1rem;
     }
 
 .fs_subheader{
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1rem;
     text-transform: uppercase;
     color: #96aadf;
@@ -896,14 +934,15 @@ z-index: 4;}
     .win-status-bar{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: .9rem;
-        height: 14.7rem;
+        
+        
         background: linear-gradient(180deg, rgba(26, 36, 71, .3) 0%, rgba(32, 44, 85, .58) 100%);
         border-radius: 1.4rem;
       
     }
+    
     .last_blocks{
         display: grid;
     grid-template-columns: 2fr 2fr;
@@ -913,10 +952,10 @@ z-index: 4;}
         display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 5px;
     
    
-    border-radius: 1rem;
+    border-radius: 5px;
    
     font-size: 0.9rem;
   
@@ -933,8 +972,8 @@ z-index: 4;}
     }
     .lc{
         
-    width: .9rem;
-    height: 1.8rem;
+    width: .6rem;
+    height: 1.5rem;
     border-radius: .4rem;
     cursor: pointer;
     display: block;
