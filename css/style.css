@@ -200,7 +200,19 @@ main {
     visibility: visible;
   }
 
-
+ *::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+  }
+ *::-webkit-scrollbar-track {
+    background: #242c54;   
+    
+    border-radius: 10px;     /* цвет дорожки */
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(56, 71, 112);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 3px solid #3d487b;  /* padding вокруг плашки */
+  }
 
 
 
@@ -408,9 +420,16 @@ margin-bottom: 10px;}
         font-weight: 700;
         font-size: 0.8rem;
     }
+    /* W3C standard
+   сейчас только для Firefox */
+
 .user-name{
     font-weight: 400;
     font-size: 0.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 60px;
 }
 .user-bets:before {
     content: "© ";
@@ -484,15 +503,23 @@ margin-bottom: 10px;}
     align-items: center;
     justify-content: center;
     z-index: 2;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    /* top: 0; */
+    left: -100px;
 }
 
 .wheel_cup {
-    position: absolute;
-    top: 4rem;
-    
-    z-index: 999;
-    display: block;
-    transform: rotate(-127.8deg);
+    width: 380px;
+    height: 380px;
+    background-color: #262746;
+    border-radius: 380px;
+    box-shadow: 0px 0px 15px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dot {
@@ -544,15 +571,20 @@ margin-bottom: 10px;}
 }
 
 .wheel_wrapper {
-   /* position: absolute;
-    left: 0;
-    top: 0;*/
+    
+    position: relative;
+    z-index: 1;
     display: block;
-    width: 10rem;
-    height: 10rem;
+    
     
 }
-
+.wheal-game-information{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    z-index: 5;
+    display: block;
+}
 .wheel_top,
 .wheel_body {
     position: absolute;
@@ -825,8 +857,16 @@ z-index: 4;}
         height: 3.8rem;
         margin-top: .5rem;
     }
+    .user-bet-oder{
+        overflow-y: scroll;
+        max-height: 400px;
+    }
+
+
+    
     .quik_bet{
         background-color: #333f70;
+        cursor: pointer;
     color: #a5b6e0;
     flex: 1 1 100%;
     height: 100%;
