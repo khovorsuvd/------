@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
     const wheel = {
-        SpinInterval: 2000,
+        SpinInterval: 100,
         allowbet: true,
         SlowWheel: function () {
             this.openBets();
@@ -56,8 +56,8 @@ $(document).ready(function () {
             let finalOffset = 440;
             let step = finalOffset / time;
             let timeCaption = document.querySelector('h2');
-            let circle = document.querySelector('.circle_animation').style;
-            circle.strokeDashoffset = 0;
+            
+           
 
             if (wheel.run2 == 1 ) {
               // timeCaption.innerText = timeFull;
@@ -77,7 +77,7 @@ $(document).ready(function () {
                     jQuery('.item').hide();
                     wheel.start();
                 } else {
-                    circle.strokeDashoffset = step * i;
+                   
                 };
             }, 1000);
         },
