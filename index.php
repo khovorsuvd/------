@@ -10,16 +10,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        
 
     <link rel="stylesheet" href="./css/style.css">
-
+<script src="./js/jq.js"></script>
+        <script src="./js/script.js"></script>
 
 </head>
 
 <body>
     <style>
         <?php
-        /*for ($i =1; $i < 55; $i++): ?>.option:nth-child(<?php echo $i;
+        for ($i =1; $i < 55; $i++): ?>.option:nth-child(<?php echo $i;
 
             $ang =$i - 1; ?>) {
             transform: rotate(<?php echo $ang * 9 - 4.5; ?>deg);
@@ -29,7 +31,7 @@
         ?><?php $time =time();
         $wera =floor($time / 60);
         $firts_time_left =($wera + 1) * 60 - $time;
-       */
+       
         ?>
     </style>
     <div class=" d-flex  align-items-center ">
@@ -410,7 +412,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-column">
+                <div class="d-flex  game_board flex-column" data-spintime="<?php echo $spin_time;?>" data-fgleft="<?php echo $firts_time_left;?>">
                     <div class="d-flex">
                         <div class="wheal-main  me-2">
                             <div class="mheal-game-display">
@@ -421,7 +423,7 @@
                                         <div class="wheel_cup">
 
                                             <div class="item">
-                                                
+                                                <h2>0</h2>
                                                 <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
                                                     <linearGradient id="grad--linear-1">
                                                         <stop offset="0%" stop-color="#61d891" class="stop-1" />

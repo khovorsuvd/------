@@ -201,7 +201,7 @@ main {
   }
 
  *::-webkit-scrollbar {
-    width: 12px;               /* ширина scrollbar */
+    width: 5px;               /* ширина scrollbar */
   }
  *::-webkit-scrollbar-track {
     background: #242c54;   
@@ -211,7 +211,7 @@ main {
   *::-webkit-scrollbar-thumb {
     background-color: rgb(56, 71, 112);    /* цвет плашки */
     border-radius: 20px;       /* закругления плашки */
-    border: 3px solid #3d487b;  /* padding вокруг плашки */
+    border: 1px solid #3d487b;  /* padding вокруг плашки */
   }
 
 
@@ -539,7 +539,7 @@ margin-bottom: 10px;}
     right: 0;
     bottom: 0;
     border-radius: 50%;
-    clip-path: polygon(51% 91%, 61% 89%, 70% 100%, 51% 100%);
+    clip-path: polygon(calc(50% + var(--g)/2) 50%, calc(50% + var(--g)/2) 0%, 100% 0%, 59% calc(-4.5% - var(--g)/2), 50% calc(50% - var(--g)/2));
 }
 
 .option:nth-child(1)::after {
@@ -634,7 +634,14 @@ margin-bottom: 10px;}
     text-transform: uppercase;
     color: #fff;
     font-weight: 500;}
-
+.shadow-wheal{
+    position: relative;
+    display: block;
+    width: 39.8rem;
+    height: 39.8rem;
+    -webkit-mask-image: radial-gradient(75.29% 50.09% at 72.1% 46.91%, #C4C4C4 0%, rgba(196, 196, 196, .19) 71.35%, rgba(196, 196, 196, 0) 100%);
+    mask-image: radial-gradient(75.29% 50.09% at 72.1% 46.91%, #C4C4C4 0%, rgba(196, 196, 196, .19) 71.35%, rgba(196, 196, 196, 0) 100%);
+}
 
 
 
