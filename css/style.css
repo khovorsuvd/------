@@ -144,7 +144,7 @@ body {
 
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, #0A0F20 0%, #11172E 100%);
+    background: linear-gradient(217deg, #110A1D, #110A1D 70.71%), linear-gradient(127deg, rgb(25, 27, 30), rgba(40, 39, 44, 1) 70.71%), linear-gradient(336deg, rgb(17, 17, 24), rgba(51, 51, 77, 1) 70.71%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +220,21 @@ main {
 
 
 
+  .header {
+    border-radius: 10px;
+    border: 4px solid #0ABFA6;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    
+    top: 0;
+    z-index: 999;
+    background-color: #0D1427;
 
+}
 
 
 
@@ -251,9 +265,9 @@ li:not(:last-child) {
 .coin-ico {
 
     font-weight: 600;
-    font-size: 12px;
     
-    color: #69dd89;
+    
+    color:#478bf9;
 
 }
 
@@ -266,7 +280,7 @@ li:not(:last-child) {
     padding: 0 .9rem;
     border: none;
     border-radius: 10px;
-    background-color: #69dd89;
+    background-color: #478bf9;
     font-size: 12px;
     font-weight: 600;
    
@@ -281,11 +295,11 @@ li:not(:last-child) {
     gap: 1.2rem;
     height: 2.4rem;
 
-    background: linear-gradient(258.29deg, rgba(80, 255, 203, .26) .41%, rgba(98, 198, 212, .13) 65.4%);
+    background: linear-gradient(258.29deg, #478bf990 .41%, rgba(98, 144, 212, 0.137) 65.4%);
     border: none;
     border-radius: 10px;
-    color: #b9fff2;
-    line-height: 1;
+    color: #478bf9;
+    
 }
 
 .user-ico {
@@ -380,21 +394,14 @@ li:not(:last-child) {
     font-size: .8rem;
     line-height: 1.4rem;
 }
-.currency_CSF, .currency_USD {
-    display: inline-flex;
-    align-items: center;
-    gap: .2rem;
-    font-variant: tabular-nums;
+.currency_CSF{
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='15px' height='15px' style=' shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd' viewBox='0 0 6.85 6.85' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer' /%3E%3Cpath class='fil0' fill='%23b3c3ec' d='M3.43 0c1.89,0 3.42,1.53 3.42,3.43 0,1.89 -1.53,3.42 -3.42,3.42 -1.9,0 -3.43,-1.53 -3.43,-3.42 0,-1.9 1.53,-3.43 3.43,-3.43zm-1.13 3.27l0.67 -1.23c0.04,-0.07 0.11,-0.11 0.18,-0.11l0.05 0c0.1,0 0.18,0.07 0.2,0.17l0.5 2.48c0.02,0.06 0,0.12 -0.04,0.17 -0.04,0.05 -0.1,0.08 -0.16,0.08l-0.55 0c-0.1,0 -0.18,-0.07 -0.2,-0.17l-0.1 -0.52 -0.36 0.67c-0.03,0.06 -0.1,0.1 -0.18,0.1l-0.04 0c-0.08,0 -0.14,-0.03 -0.18,-0.1l-0.41 -0.71 -0.1 0.56c-0.02,0.1 -0.11,0.17 -0.21,0.17l-0.51 0c-0.07,0 -0.12,-0.03 -0.16,-0.08 -0.04,-0.05 -0.06,-0.11 -0.05,-0.17l0.5 -2.48c0.02,-0.1 0.11,-0.17 0.21,-0.17l0.04 0c0.07,0 0.14,0.04 0.18,0.11l0.72 1.23zm2.56 -0.27l0.38 -0.86c0.03,-0.08 0.11,-0.13 0.19,-0.13l0.56 0c0.08,0 0.14,0.04 0.18,0.1 0.04,0.06 0.04,0.13 0.01,0.2l-1.13 2.49c-0.03,0.07 -0.1,0.12 -0.19,0.12l-0.04 0c-0.08,0 -0.15,-0.05 -0.19,-0.12l-1.13 -2.49c-0.03,-0.07 -0.03,-0.14 0.01,-0.2 0.04,-0.06 0.11,-0.1 0.18,-0.1l0.61 0c0.08,0 0.16,0.05 0.19,0.13l0.37 0.86z' /%3E%3C/g%3E%3C/svg%3E") no-repeat 0px 2px;
+  padding-left: 19px;
+ 
+
 }
-.currency_CSF:before, .currency_USD:before {
-    content: "© ";
-    position: relative;
-    font-family: icomoon !important;
-    font-weight: 400;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;}
+
+
     .color-header__users {
         display: flex;
         align-items: center;
@@ -440,7 +447,7 @@ margin-bottom: 10px;}
   max-width: 60px;
 }
 .user-bets:before {
-    content: "© ";
+  
 }
 .color-header__title-first{
     color: #7896ff;
@@ -861,7 +868,8 @@ h4{font-size: 1rem;
     margin-left: 1.4rem;
     font-weight: 500;
     font-size: 1.5rem;
-    color: #b3c3ec;
+    height: 20px;
+    width: 20px;
 }
 .sum_value{
     color: #e0e6ff;
